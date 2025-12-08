@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* pastel background gradient similar to your design */
+body {
+  background: linear-gradient(180deg, #FBF8FF 0%, #FFF9FB 100%);
+  color: #111827;
+}
+
+/* small utility */
+.card-shadow { box-shadow: 0 8px 30px rgba(2,6,23,0.06); border-radius: 16px; }

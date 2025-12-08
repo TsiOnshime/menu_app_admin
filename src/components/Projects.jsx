@@ -1,22 +1,28 @@
+import portfolio from "../images/portfolio1.png";
+import innovate from "../images/innovate.png";
+import codeflow from "../images/codeflow.png";
 export default function FeaturedProjects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      desc: "Modern online shopping experience with React and Stripe integration",
-      img: "/images/ecommerce.png",
+      title: "Corporate Service Platform",
+      desc: "A modern, responsive corporate services web app built with React and Tailwind CSS. Clean UI, intuitive navigation, and designed for businesses to showcase services and information with high performance.",
+      img: innovate,
       tags: ["React", "Tailwind", "Stripe"],
+      link: "https://innovatecorp2.onrender.com/",
     },
     {
-      title: "Task Management App",
-      desc: "Collaborative project management tool with real-time updates",
-      img: "/images/taskapp.png",
+      title: "CodeFlow Landing Page",
+      desc: "A modern, responsive landing page built with React and Tailwind CSS. Designed for smooth navigation and visually engaging UI, highlighting features and call-to-action sections.",
+      img: codeflow,
       tags: ["React", "Firebase", "Tailwind"],
+      link: "https://codeflow-landingpage.onrender.com",
     },
     {
-      title: "Portfolio Website",
-      desc: "Responsive portfolio site for creative professionals",
-      img: "/images/portfolio.png",
-      tags: ["React", "CSS3", "JavaScript"],
+      title: "Personal Portfolio Website",
+      desc: "A modern, responsive personal portfolio built with React and Tailwind CSS. Features smooth animations, clean grid layouts, and a pastel UI theme to showcase projects, skills, and experience professionally.",
+      img: portfolio,
+      tags: ["React", "Tailwind", "Stripe"],
+      link: "https://userportfolio-4szw.onrender.com",
     },
     {
       title: "Weather Dashboard",
@@ -55,8 +61,17 @@ export default function FeaturedProjects() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{p.title}</h3>
                 <p className="text-gray-600 text-sm mb-4">{p.desc}</p>
+                <a
+                  href={p.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Open ${p.title} in a new tab`}
+                  className="inline-block mt-2 text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 focus:ring-2 focus:ring-purple-300 px-3 py-1 rounded-lg transition-colors"
+                >
+                  View site
+                </a>
 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mt-4">
                   {p.tags.map((tag, t) => (
                     <span
                       key={t}

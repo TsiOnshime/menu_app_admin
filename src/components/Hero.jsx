@@ -1,5 +1,5 @@
 import React from "react";
-
+import TsionImage from "../assets/Tsion.png"
 export default function Hero() {
   return (
     <section className="relative w-full min-h-screen overflow-hidden bg-[#f7f9ff] flex items-center">
@@ -76,7 +76,7 @@ export default function Hero() {
         <div className="flex justify-center z-10">
           <div className="rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.12)]">
             <img
-              src="/src/assets/Tsion.png"
+              src={TsionImage}
               alt="Professional person"
               className="w-[420px] h-[320px] object-cover"
             />

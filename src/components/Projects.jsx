@@ -1,12 +1,16 @@
 import React from "react";
-
+import Innovate from "../images/innovate.png";
+import Portfolio1 from "../images/portfolio1.png";
+import Fashion from "../images/fashion.png";
+import Codeflow from "../images/codeflow.png";
+import AiAnalytics from "../images/aiAnalytics.png";
 const projects = [
   {
     title: "Innovate Corp",
     description:
       "A fully responsive SaaS homepage built with React and Tailwind, featuring a modern hero section, pricing tiers, testimonials, and strong CTAs. Designed with clean UI, smooth spacing, and conversion-focused layout best practices.",
     tags: ["React", "Tailwind"],
-    img: "/src/images/innovate.png",
+    img: Innovate,
     link: "https://innovatecorp2.onrender.com/",
   },
   {
@@ -14,7 +18,7 @@ const projects = [
     description:
       "A custom portfolio site showcasing skills, experience, and sample work. Built with React and Tailwind, optimized for responsiveness, fast loading, and a minimal modern aesthetic. Includes sections for projects, contact, and social links.",
     tags: ["React", "Tailwind"],
-    img: "/src/images/portfolio1.png",
+    img: Portfolio1,
     link: "https://userportfolio-4szw.onrender.com/",
   },
   {
@@ -22,7 +26,7 @@ const projects = [
     description:
       "A stylish, responsive landing page for a fashion blog built with React and Tailwind CSS. Features a modern layout with hero section, blog previews, about section, and newsletter signup. Designed to highlight content with clean typography and elegant spacing.",
     tags: ["React", "Tailwind"],
-    img: "/src/images/fashion.png",
+    img: Fashion,
     link: "https://fashion-blog-sra6.onrender.com",
   },
   {
@@ -30,7 +34,7 @@ const projects = [
     description:
       "A modern, fully responsive AI development platform built with React and Tailwind CSS. The site showcases CodeFlow’s core features—including AI code completion, automated testing, and smart debugging—through a clean, SaaS-style interface.",
     tags: ["React", "Tailwind"],
-    img: "/src/images/codeflow.png",
+    img: Codeflow,
     link: "https://codeflow-landingpage.onrender.com/",
   },
   {
@@ -38,7 +42,7 @@ const projects = [
     description:
       "A modern investor-focused landing page built with React and Tailwind, showcasing a fictional AI-powered analytics startup raising Series A funding.",
     tags: ["React", "Tailwind"],
-    img: "/src/images/aiAnalytics.png",
+    img: AiAnalytics,
     link: "https://pitchlandingpage-xhh5.onrender.com/",
   },
 ];

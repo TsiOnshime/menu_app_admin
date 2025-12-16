@@ -4,6 +4,7 @@ import { HiLocationMarker } from "react-icons/hi";
 import { FaGraduationCap, FaCoffee } from "react-icons/fa";
 import { PiAsteriskBold } from "react-icons/pi";
 import { LuLightbulb, LuTarget, LuUsers } from "react-icons/lu";
+import Avatar from "../assets/avatar.jpg";
 export default function AboutMe() {
   return (
     <section className="w-full bg-[#f7f9ff] py-20" id="about">
@@ -81,7 +82,7 @@ export default function AboutMe() {
           {/* PROFILE CARD */}
           <div className="bg-white rounded-2xl shadow-md p-8 text-center">
             <img
-              src="/src/assets/avatar.jpg"
+              src={Avatar}
               alt="Profile"
               className="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
             />

@@ -2,35 +2,44 @@ import React from "react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Innovate Corp",
     description:
-      "Modern online shopping experience with React and Stripe integration",
-    tags: ["React", "Tailwind", "Stripe"],
-    img: "/images/ecommerce.png",
+      "A fully responsive SaaS homepage built with React and Tailwind, featuring a modern hero section, pricing tiers, testimonials, and strong CTAs. Designed with clean UI, smooth spacing, and conversion-focused layout best practices.",
+    tags: ["React", "Tailwind"],
+    img: "/src/images/innovate.png",
+    link: "https://innovatecorp2.onrender.com/",
   },
   {
-    title: "Task Management App",
-    description: "Collaborative project management tool with real-time updates",
-    tags: ["React", "Firebase", "Tailwind"],
-    img: "/images/taskapp.png",
+    title: "Responsive Developer Portfolio",
+    description:
+      "A custom portfolio site showcasing skills, experience, and sample work. Built with React and Tailwind, optimized for responsiveness, fast loading, and a minimal modern aesthetic. Includes sections for projects, contact, and social links.",
+    tags: ["React", "Tailwind"],
+    img: "/src/images/portfolio1.png",
+    link: "https://userportfolio-4szw.onrender.com/",
   },
   {
-    title: "Portfolio Website",
-    description: "Responsive portfolio site for creative professionals",
-    tags: ["React", "CSS3", "JavaScript"],
-    img: "/images/portfolio.png",
+    title: "Fashion Blog Landing Page",
+    description:
+      "A stylish, responsive landing page for a fashion blog built with React and Tailwind CSS. Features a modern layout with hero section, blog previews, about section, and newsletter signup. Designed to highlight content with clean typography and elegant spacing.",
+    tags: ["React", "Tailwind"],
+    img: "/src/images/fashion.png",
+    link: "https://fashion-blog-sra6.onrender.com",
   },
   {
-    title: "Weather Dashboard",
-    description: "Interactive weather app with location-based forecasts",
-    tags: ["JavaScript", "API", "CSS3"],
-    img: "/images/weather.png",
+    title: "Codeflow Landing Page",
+    description:
+      "A modern, fully responsive AI development platform built with React and Tailwind CSS. The site showcases CodeFlow’s core features—including AI code completion, automated testing, and smart debugging—through a clean, SaaS-style interface.",
+    tags: ["React", "Tailwind"],
+    img: "/src/images/codeflow.png",
+    link: "https://codeflow-landingpage.onrender.com/",
   },
   {
-    title: "Blog Platform",
-    description: "Content management system with rich text editor",
-    tags: ["Django", "Python", "Bootstrap"],
-    img: "/images/blog.png",
+    title: "AI Analytics – Series A Fundraising Platform",
+    description:
+      "A modern investor-focused landing page built with React and Tailwind, showcasing a fictional AI-powered analytics startup raising Series A funding.",
+    tags: ["React", "Tailwind"],
+    img: "/src/images/aiAnalytics.png",
+    link: "https://pitchlandingpage-xhh5.onrender.com/",
   },
 ];
 
@@ -64,7 +73,14 @@ export default function FeaturedProjects() {
               <p className="text-gray-600 mb-4 leading-relaxed">
                 {project.description}
               </p>
-
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-medium text-blue-600 hover:text-blue-800 hover:underline transition mb-4"
+              >
+                Visit Project →
+              </a>
               {/* Tags */}
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag, i) => (

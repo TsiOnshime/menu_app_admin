@@ -20,35 +20,32 @@ export default function AboutMe() {
           </h3>
 
           <p className="text-gray-600 leading-relaxed">
-            I'm a passionate front-end developer who believes that great design
-            and seamless functionality go hand in hand. With over 2 years of
-            experience, I specialize in creating digital experiences that are
-            not only visually stunning but also highly functional and
-            user-friendly.
+            I'm a 4th-year Software Engineering student specializing in
+            front-end development, passionate about transforming ideas into
+            clean, responsive, and user-friendly digital experiences. I focus on
+            writing high-quality, maintainable code and crafting interfaces that
+            feel intuitive and modern.
           </p>
 
           <p className="text-gray-600 leading-relaxed">
-            My expertise spans across modern JavaScript frameworks, responsive
-            design, and user experience optimization. I love transforming
-            complex problems into simple, elegant solutions that make a real
-            impact.
+            I’ve completed multiple real-world projects using React, Tailwind
+            CSS, Firebase, and modern JavaScript tools. Whether it’s building a
+            full UI from scratch, improving performance, or polishing the user
+            experience, I approach every project with professionalism and
+            attention to detail. My goal is to deliver reliable, pixel-perfect
+            work that helps clients succeed—on time, every time.
           </p>
 
           {/* STATS */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="bg-[#f1f5ff] rounded-xl p-5 text-center">
-              <h4 className="text-2xl font-bold text-[#1F2A45]">15+</h4>
+              <h4 className="text-2xl font-bold text-[#1F2A45]">10+</h4>
               <p className="text-gray-500 text-sm">Projects Completed</p>
             </div>
 
             <div className="bg-[#eef8ff] rounded-xl p-5 text-center">
               <h4 className="text-2xl font-bold text-[#2F5CFF]">98%</h4>
               <p className="text-gray-500 text-sm">Client Satisfaction</p>
-            </div>
-
-            <div className="bg-[#f4f9ff] rounded-xl p-5 text-center">
-              <h4 className="text-2xl font-bold text-[#1F2A45]">2+</h4>
-              <p className="text-gray-500 text-sm">Years Experience</p>
             </div>
 
             <div className="bg-[#e9f9f0] rounded-xl p-5 text-center">
@@ -84,7 +81,7 @@ export default function AboutMe() {
           {/* PROFILE CARD */}
           <div className="bg-white rounded-2xl shadow-md p-8 text-center">
             <img
-              src="/your-image-2.jpg"
+              src="/src/assets/avatar.jpg"
               alt="Profile"
               className="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
             />
@@ -95,13 +92,22 @@ export default function AboutMe() {
 
             {/* Social Icons */}
             <div className="flex justify-center gap-4">
-              <a className="bg-[#2F5CFF] w-10 h-10 text-white rounded-full flex items-center justify-center hover:bg-[#1F2A45] transition">
+              <a
+                className="bg-[#2F5CFF] w-10 h-10 text-white rounded-full flex items-center justify-center hover:bg-[#1F2A45] transition"
+                href="https://www.linkedin.com/in/tsion-shimelis-44729a397/" target="_blank"
+              >
                 <FaLinkedinIn size={18} />
               </a>
-              <a className="bg-[#2F5CFF] w-10 h-10 text-white rounded-full flex items-center justify-center hover:bg-[#1F2A45] transition">
+              <a
+                className="bg-[#2F5CFF] w-10 h-10 text-white rounded-full flex items-center justify-center hover:bg-[#1F2A45] transition"
+                href="https://github.com/TsiOnshime" target="_blank"
+              >
                 <FaGithub size={18} />
               </a>
-              <a className="bg-[#2F5CFF] w-10 h-10 text-white rounded-full flex items-center justify-center hover:bg-[#1F2A45] transition">
+              <a
+                className="bg-[#2F5CFF] w-10 h-10 text-white rounded-full flex items-center justify-center hover:bg-[#1F2A45] transition"
+                href="mailto:tshimelis23@gmail.com"
+              >
                 <FaEnvelope size={18} />
               </a>
             </div>
@@ -121,7 +127,7 @@ export default function AboutMe() {
 
               <li className="flex items-center gap-3">
                 <FaGraduationCap className="text-[#2F5CFF] text-xl" />
-                Computer Science, AAU
+                Software Engineering, AAU
               </li>
 
               <li className="flex items-center gap-3">

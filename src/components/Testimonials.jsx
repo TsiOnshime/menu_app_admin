@@ -2,17 +2,17 @@ export default function Testimonials() {
   const testimonials = [
     {
       text: `"Tsion delivered exceptional work on our e-commerce platform. Her attention to detail and technical expertise made our project a huge success."`,
-      name: "Sarah Johnson",
+      name: "Hailemariam Gebeyehu",
       role: "Project Manager",
     },
     {
       text: `"Working with Tsion was a pleasure. She understood our requirements perfectly and delivered a beautiful, responsive website ahead of schedule."`,
-      name: "Michael Chen",
+      name: "Woinshet Abate",
       role: "Startup Founder",
     },
     {
       text: `"Tsion's code quality is outstanding. She writes clean, maintainable code and always follows best practices. Highly recommended!"`,
-      name: "David Rodriguez",
+      name: "Sofonias Kebede",
       role: "Senior Developer",
     },
   ];

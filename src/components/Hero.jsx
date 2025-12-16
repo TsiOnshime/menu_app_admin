@@ -72,7 +72,7 @@ export default function Hero() {
         <div className="flex justify-center z-10">
           <div className="rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.12)]">
             <img
-              src="/your-image.jpg"
+              src="/src/assets/Tsion.png"
               alt="Professional person"
               className="w-[420px] h-[320px] object-cover"
             />

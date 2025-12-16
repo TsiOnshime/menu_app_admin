@@ -7,15 +7,15 @@ const education = [
     icon: <PiBuildingFill size={32} className="text-white" />,
     gradient: "from-[#1F2A45] to-[#2F5CFF]",
     school: "Addis Ababa University",
-    field: "Computer Science",
-    years: "2018 – 2022",
+    field: "Software Engineering",
+    years: "2022 – 2028",
   },
   {
     icon: <FiCode size={32} className="text-white" />,
     gradient: "from-[#2F5CFF] to-[#1F2A45]",
     school: "ALX Software Engineering",
-    field: "Full-Stack Development",
-    years: "2022 – 2023",
+    field: "Backend Development",
+    years: "2025 – 2025",
     
   },
   {
@@ -23,7 +23,7 @@ const education = [
     gradient: "from-[#059669] to-[#0f766e]",
     school: "freeCodeCamp",
     field: "Web Development Certification",
-    years: "2021 – 2022",
+    years: "2025 – 2025",
     
   },
 ];

@@ -22,15 +22,15 @@ export default function Contact() {
 
     emailjs
       .send(
-        "service_rsgv06h",
-        "template_uzz2798",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           name: form.name,
           email: form.email,
           subject: form.subject,
           message: form.message,
         },
-        "IaEln3Dv9RT2RwpY_"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {

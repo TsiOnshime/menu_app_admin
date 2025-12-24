@@ -1,34 +1,33 @@
-import React from "react";
-import Hero from "./components/Hero";
-import About from "./components/AboutMe";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Experience from "./components/Experience";
-import Education from "./components/Education";
-import Testimonials from "./components/Testimonials";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+import AddFood from "./pages/AddFood";
+import ProtectedRoute from "./components/ProtectedRoute";
+
 export default function App() {
   return (
-    <div className="min-h-screen text-gray-800 font-sans">
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
 
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          }
+        />
 
-      <main className="">
-        <Navbar />
-        <Hero />
-        <div className="">
-          <About />
-          <Skills />
-          <Projects />
-          <Experience />
-          <Education />
-          <Testimonials />
-          <Contact />
-        </div>
-      </main>
-
-      <Footer />
-    </div>
+        <Route
+          path="/add-food"
+          element={
+            <ProtectedRoute>
+              <AddFood />
+            </ProtectedRoute>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }

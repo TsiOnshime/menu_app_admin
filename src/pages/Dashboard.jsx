@@ -7,6 +7,8 @@ import {
   deleteDoc,
 } from "firebase/firestore";
 import { db } from "../firebase";
+import MenuQRCode from "../components/MenuQRCode";
+
 
 export default function FoodTable() {
   const [items, setItems] = useState([]);
@@ -57,6 +59,7 @@ export default function FoodTable() {
   return (
     <>
       {/* TABLE */}
+      <MenuQRCode />
       <div className="overflow-x-auto">
         <table className="w-full border-collapse">
           <thead>
@@ -100,7 +103,8 @@ export default function FoodTable() {
                         item.category === "drink"
                           ? "bg-blue-100 text-blue-600"
                           : "bg-orange-100 text-orange-600"
-                      }`}Birr
+                      }`}
+                    Birr
                   >
                     {item.category}
                   </span>

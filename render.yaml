@@ -1,8 +1,7 @@
-services:
-  - type: web
-    name: Admin_BurgerHouse
-    env: static
-    staticPublishPath: dist
+static_sites:
+  - name: Admin_BurgerHouse
+    buildCommand: npm run build
+    publishPath: dist
     routes:
       - type: rewrite
         source: /*

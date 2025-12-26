@@ -7,12 +7,16 @@ import {
   deleteDoc,
 } from "firebase/firestore";
 import { db } from "../firebase";
-import MenuQRCode from "../components/MenuQRCode";
+import { useNavigate } from "react-router-dom";
+
+
+
 
 
 export default function FoodTable() {
   const [items, setItems] = useState([]);
   const [editingItem, setEditingItem] = useState(null);
+   const navigate = useNavigate();
 
   useEffect(() => {
     fetchItems();
@@ -59,7 +63,27 @@ export default function FoodTable() {
   return (
     <>
       {/* TABLE */}
-      <MenuQRCode />
+      {/* NAVBAR */}
+      <div className="bg-white shadow-sm rounded-xl mb-6 px-6 py-4 flex justify-between items-center">
+        <h1 className="text-2xl font-bold text-gray-800">Admin Dashboard</h1>
+
+        <div className="flex gap-3">
+          <button
+            onClick={() => navigate("/add-food")}
+            className="bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600 transition"
+          >
+            + Add Food
+          </button>
+
+          <button
+            onClick={() => navigate("/qrcode")}
+            className="bg-orange-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-orange-600 transition"
+          >
+            View QR Code
+          </button>
+        </div>
+      </div>
+
       <div className="overflow-x-auto">
         <table className="w-full border-collapse">
           <thead>
@@ -134,7 +158,6 @@ export default function FoodTable() {
           </tbody>
         </table>
       </div>
-
       {/* EDIT MODAL */}
       {editingItem && (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">

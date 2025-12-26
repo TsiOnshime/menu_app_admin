@@ -3,6 +3,7 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import AddFood from "./pages/AddFood";
 import ProtectedRoute from "./components/ProtectedRoute";
+import QRcode from "./pages/QRcode";
 
 export default function App() {
   return (
@@ -27,6 +28,16 @@ export default function App() {
             </ProtectedRoute>
           }
         />
+        <Route
+          path="/qrcode"
+          element={
+            <ProtectedRoute>
+              <QRcode />
+            </ProtectedRoute>
+          }
+        />
+
+
 
         <Route path="*" element={<Login />} />
       </Routes>
